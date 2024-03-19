@@ -27,7 +27,7 @@ Some words:
 
 ## ⤴⤵ The entropy curve
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\entropy.png)
+![](..\images\entropy.png)
 
 - The entropy curve is given above.
 
@@ -78,7 +78,7 @@ If you don't want to use the `entropy` then Gini impurity can also be used.
 > Here, the **reduction of entropy** is called **information gain**.
 > — Andrew
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\choosing-split.png)
+![](..\images\choosing-split.png)
 
 So, when we choose any feature we will get the entropy for each split.
 
@@ -150,7 +150,7 @@ This way, all values will get their **different features.** And the algorithm wi
 
 # 🔢 Continuous feature selection and processing
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\continuous-splitting.png)
+![](..\images\continuous-splitting.png)
 
 - For that feature, we will take multiple thresholds (numbers)
 
@@ -184,7 +184,7 @@ This way, all values will get their **different features.** And the algorithm wi
 > 
 > ***Rather than trying to <u>reduce entropy</u> as we did in classification, here we will <u>reduce variance</u>.***
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\variance-decision-trees.png)
+![](..\images\variance-decision-trees.png)
 
 - This is **very similar** to what we did in the classification trees.
 
@@ -192,7 +192,7 @@ This way, all values will get their **different features.** And the algorithm wi
 
 - Then we will also measure the **reduction in variance!** 👇🏻
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\variance-decision-trees-2.png)
+![](..\images\variance-decision-trees-2.png)
 
 # 🌳🌲🎄 Random Forest 🎋🌲🌴
 

@@ -1,6 +1,6 @@
 # 🤖 Reinforcement Learning
 
-We could use the supervised learning for the task that reinforcement can solve, but that would require limitless number of combinations to train with.
+We could use the supervised learning for the task that reinforcement can solve, but that would require limitless number of **combinations** to train with.
 
 It makes use of:
 
@@ -40,7 +40,7 @@ And of course an agent.
 
 # 💵 Sooner rewards matter.
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\reward-discount.png)
+![](..\images\reward-discount.png)
 
 #### **Don't freak out!**
 
@@ -90,7 +90,7 @@ The weight **decreases** as the step increases. Here in the screenshot attached 
 
 # 🗺 Not single action treats all
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\not-single-action-treats-all.png)
+![](..\images\not-single-action-treats-all.png)
 
 Read from left - above and then move down slowly.
 
@@ -132,7 +132,7 @@ This is the "center" of the reinforcement learning. Before heading towards the d
 
 - Optimal Q Function
 
-### ℹ What is it?
+### ❔ What is it?
 
 This function is used **to explore all possible actions from the state `s` and calculate the reward for respective action.**
 
@@ -252,7 +252,7 @@ The behaving optimally will require some logic; but at the start it will be noth
 
 That's it! Let's see with an example.
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\bellman-example.png)
+![](..\images\bellman-example.png)
 
 Here we have tested the equation for **two settings**:
 
@@ -268,9 +268,45 @@ Here we have tested the equation for **two settings**:
 
 > The main point is ***bellman equation doesn't create anything.*** It just states how to react and just **compressed the 3 steps** that we discussed above. "To behave optimally" simply means, follow the policy.
 > 
-> 
 > Note: That thing may change in the future, as I learn. But for now it is what it is.
 
+# 🪜 The uncertainty of the movement
+It is entirely possible that, when you move the *helicopter* to the left, it goes to right and down! And that is called **uncertainty**.
+
+> So, that can be formalized by <u>**"random misstep"**</u>.
+
+Certainly! In this lecture on reinforcement learning, the key points are as follows:
+
+- **Reinforcement Learning Problem**:
+  - The reinforcement learning problem is **stochastic**, meaning that there isn't a single fixed sequence of rewards. Instead, you encounter a variety of different rewards over time.
+  - Unlike deterministic scenarios, where we can predict outcomes precisely, in stochastic reinforcement learning, we deal with uncertainty.
+
+- **Objective in Stochastic Reinforcement Learning**:
+  - Our goal is **not** to maximize a specific return value (since it's random).
+  - Instead, we aim to maximize the **average value** of the sum of **discounted rewards**.
+  - By "average value," we mean that if you were to try out your policy multiple times (e.g., a thousand or a million times), you'd get various reward sequences.
+  - Taking the average over all these different sequences gives us the concept of **expected return**.
+
+> ***So, the job of the reinforcement learning algorithm is to come up with the way to maximize the overall average return.***
+
+# 💣 The state is made up of vector!
+Yeah, and of course, *obviously!*
+
+Till now we have seen that the state could be some discrete single number, but in the **real scenario** it would be a vector of numbers.
+
+Like, just take an example of a helicopter. **There the state won't be a single number**. But, it would be like `s = [x, y, rotation, x_velocity, y_velocity, rotation_velocity]` etc.
+
+So, yeah just keep that in mind!
+
+# I think we are done, done!?
+Next lectures are going little bit in detail, but not much that I can wrap my head around completely. Since this is **not a specialization** on the RL, I think it will be better to just watch them and leave the practical RL to its future specialization.
+
+So...
+Ending notes!?
+
+> Bye, then! It has been an amazing journey. I completed first 75% of the course in like 1 week and the rest took 2 months because of loooong gaps. But finally the course seems to be done. I have learnt many new things and also got confident in the existing areas. 
+>
+> All thanks to the legend Andre NG 🙏 
 
 
-
+Let's meet in another course!

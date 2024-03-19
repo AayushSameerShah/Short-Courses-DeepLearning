@@ -10,7 +10,7 @@
 
 - So say user 4, Aayush has not seen the movie "Black Swan" and based on his other movie preferrences if we predict he would rate Black Swan a rating of 3.5 out of 5, then we would recommend the movie to him!
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\recommender-intro.png)
+![](..\images\recommender-intro.png)
 
 > ### 👉🏻 The recommender system can have 2 settings:
 > 
@@ -22,7 +22,7 @@ Let's see both cases one by one.
 
 # `1.` When the features of the movies are available.
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\recommender-features.png)
+![](..\images\recommender-features.png)
 
 - Here, two features are available for each movie. The degree of romance and degree of action.
 
@@ -34,7 +34,7 @@ The **linear regression** to rescue. It is very simple.
 
 > ***Predict the rating, for the user `i` for the movie `j` based on the learned weights.***
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\recommender-linear-regression.png)
+![](..\images\recommender-linear-regression.png)
 
 - Here, we have the features x1 and x2.
 
@@ -335,7 +335,7 @@ This algorithm takes advantage of **the properties of the parties involved** in 
 
 ## 😋 Training
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\usr-net-movie-net.png)
+![](..\images\usr-net-movie-net.png)
 
 - So, we will have **some set of features for users and for movies**.
 
@@ -347,7 +347,7 @@ This algorithm takes advantage of **the properties of the parties involved** in 
 
 - Then applying the sigmoid function, we can say whether or not to recommend this movie to the user.
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\nn-architechture-content-based.png)
+![](..\images\nn-architechture-content-based.png)
 
 - The main benefit of the neural network is **we can combine them the way we want.**
 
@@ -367,13 +367,13 @@ This algorithm takes advantage of **the properties of the parties involved** in 
 
 - So we will take just that. But PCA does more things rather than taking the X1.
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\just-x1.png)
+![](..\images\just-x1.png)
 
 ## The mutual importance.
 
 As said above, ***we can't just drop the axes*** they both give some information. The below example shows just that, when we have the X1 and X2 from which we can't just drop because without another one can't give enough information 👇🏻
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\both-important-axes.png)
+![](..\images\both-important-axes.png)
 
 - The example above *suggests to find a new feature called "size" which may be a multiplication of x1 and x2*.
 
@@ -383,7 +383,7 @@ As said above, ***we can't just drop the axes*** they both give some information
 
 ### PCA and Linear Regression difference
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\pca-vs-lr.png)
+![](..\images\pca-vs-lr.png)
 
 Summary of the difference between PCA and linear regression:
 
@@ -421,7 +421,7 @@ In essence, while linear regression focuses on predicting a specific output, PCA
 
 ## 🏹 Getting the value of PCA
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\getting-pca-value.png)
+![](..\images\getting-pca-value.png)
 
 - Let's say we have the 2 features in the data.
 
@@ -435,7 +435,7 @@ In essence, while linear regression focuses on predicting a specific output, PCA
 
 The data we have after applying the PCA is "compressed". But we can also get back the original data (not exact, but approximated).
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\reconstruction-pca.png)
+![](..\images\reconstruction-pca.png)
 
 - That's simple!
 

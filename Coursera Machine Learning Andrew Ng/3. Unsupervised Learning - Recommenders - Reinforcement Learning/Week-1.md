@@ -12,7 +12,7 @@ $\frac{1}{m} \sum_{i=1}^m ||x^i - \mu^i||^2$
 
 Which is simply the distance between the cluster centroid and the example that the cluster centroid is assigned. And we will be trying to minimize that.
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\clustering-objective-function.png)
+![](..\images\clustering-objective-function.png)
 
 - And... that 👆🏻 is how the objective function looks like.
 
@@ -98,7 +98,7 @@ In summary, anomaly detection is more about identifying unusual patterns in data
 
 ___
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\anomaly-intuition.png)
+![](..\images\anomaly-intuition.png)
 
 # 〰 Gaussian Distribution
 
@@ -121,15 +121,15 @@ This is the function that we will use.
 
 **Test - 1:**
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\normal-1.png)
+![](..\images\normal-1.png)
 
 **Test - 2:**
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\normal-2.png)
+![](..\images\normal-2.png)
 
 **Test - 3:**
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\notmal-3.png)
+![](..\images\notmal-3.png)
 
 ## 👼🏻 How is it applied in anomaly detection?
 
@@ -251,7 +251,7 @@ Here we will "need some labels". That we *obviously will have*.
 
 ### `2.` Error analysis
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\ambiguous-anomaly.png)
+![](..\images\ambiguous-anomaly.png)
 
 - It may happen that the given anomaly seems under **the normal range** but it actually is not.
 
@@ -261,7 +261,7 @@ Here we will "need some labels". That we *obviously will have*.
 
 - By doing that, **you will come up with entirely new feature** that may help detect anomalies better! 👇🏻
 
-![](E:\GitHub\Short-Courses-DeepLearning\Coursera%20Machine%20Learning%20Andrew%20Ng\images\added-feature-anomaly.png)
+![](..\images\added-feature-anomaly.png)
 
 
 
