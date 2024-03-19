@@ -64,7 +64,7 @@ This is why the test set would be **a fair estimate** for the generalized model 
 
 # 💊 Diagnostic-1: Bias and Variance
 
-![](..\images\bias-variance-tradeoff.png)
+![](../images/bias-variance-tradeoff.png)
 
  Just choose the one which is in the middle!
 
@@ -108,13 +108,13 @@ Cool!!!
 
 ## ⤴ Learning curve
 
-![](..\images\learning-curve.png)
+![](../images/learning-curve.png)
 
 > As the training data gets larger, it is likely that the training error gets larger...
 
 ## Learning curve when high bias
 
-![](..\images\learning-curve-high-bias.png)
+![](../images/learning-curve-high-bias.png)
 
 - When there is a high bias, then the curve will **flat out**.
 
@@ -124,13 +124,13 @@ Cool!!!
 
 ## Learning curve when high variance
 
-![](..\images\learning-curve-high-variance.png)
+![](../images/learning-curve-high-variance.png)
 
 - Here the performance of the validation is much higher than the training.
 
 - **Adding more data would help** here 👇🏻
 
-![](..\images\learning-curve-high-variance-2.png)
+![](../images/learning-curve-high-variance-2.png)
 
 > ### The main part is:
 > 
@@ -284,7 +284,7 @@ ___
 
 - Mean the algorithm is able to identify 'this many' percentage of records correctly as TRUE.
 
-![](..\images\precision-recall.png)
+![](../images/precision-recall.png)
 
 This single is the BEST slide ever for the precision and recall. Ever.
 

@@ -45,7 +45,7 @@
 
 
 
-![](..\images\decision-boundry.png)
+![](../images/decision-boundry.png)
 
 **Interpretation:**
 
@@ -59,7 +59,7 @@
 
 
 
-![](..\images\non-linear-decision-boundaries.png)
+![](../images/non-linear-decision-boundaries.png)
 
 # 💵 Cost Function *ft. Logistic Regression*
 
@@ -67,7 +67,7 @@
 
 
 
-![](..\images\logistic-cost.png)
+![](../images/logistic-cost.png)
 
 🤔 *But, we can make the loss function **convex again for  logistic regression** if we make some changes...*
 
@@ -77,7 +77,7 @@
 
 **The cost function is as follows:**
 
-![](..\images\logistic-cost-function.png)
+![](../images/logistic-cost-function.png)
 
 **Interpretation:**
 
@@ -101,7 +101,7 @@
 
 
 
-![](..\images\gradient-descent-logistic.png)
+![](../images/gradient-descent-logistic.png)
 
 😲 See!? Exactly same **as we did in the linear regression**! Just the internals have changed.
 

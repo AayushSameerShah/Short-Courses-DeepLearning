@@ -40,7 +40,7 @@ And of course an agent.
 
 # 💵 Sooner rewards matter.
 
-![](..\images\reward-discount.png)
+![](../images/reward-discount.png)
 
 #### **Don't freak out!**
 
@@ -90,7 +90,7 @@ The weight **decreases** as the step increases. Here in the screenshot attached 
 
 # 🗺 Not single action treats all
 
-![](..\images\not-single-action-treats-all.png)
+![](../images/not-single-action-treats-all.png)
 
 Read from left - above and then move down slowly.
 
@@ -252,7 +252,7 @@ The behaving optimally will require some logic; but at the start it will be noth
 
 That's it! Let's see with an example.
 
-![](..\images\bellman-example.png)
+![](../images/bellman-example.png)
 
 Here we have tested the equation for **two settings**:
 
