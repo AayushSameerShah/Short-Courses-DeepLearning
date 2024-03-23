@@ -5,6 +5,8 @@ This coursera course is just so "professional" that they have made it like 8 hou
 
 But as I have started this course, I will complete it. So let's get started and finished fast 🔥
 
+ 🔗**The course link**: [Prompt Engineering from Vanderbilt University](https://www.coursera.org/learn/prompt-engineering/)
+
 # 🚓 The misc patterns
 
 > [!NOTE]
@@ -203,10 +205,115 @@ Think:
 > ### 🧨
 > **We can have the system** whenever **it sees a result**, **stop pulling the actual result**, **put it in there**, and then basically **feed this first, sec chunk back to the language model** to then **continue the process**. We don't actually have to worry about if it's going to fake the rest of this, we could just have it go and we can **incrementally get to every, each time we get a new result out that we actually need to fill in**, we could go and **run the web search and fill in that result**.
 
-# Check the model output consistency!
+# 🔢 Check the model output consistency!
 
 After times, the model keeps updating. So, to keep checking it's output consistency, one of the ways is "to grade the passage".
 
 1. Give say, 5 to 6 different passages and make the model to grade them out of 10.
 2. Store that info in the PC.
 3. After 3 months, is the model is updated, then again check these examples and if the grading is dropped **below** some threshold, then that means that the model is changed.
+
+# #️⃣ Template Pattern
+This is what I have been doing since years. But just as some bulleted points:
+
+- Use the markdown to for the headings 👇🏻
+```
+**Name**: <ONE LINE SUMMARY>
+```
+- Use the `< >` as the placeholders. 👆🏻
+
+# Ⓜ️ Meta Language Pattern
+To use this pattern, your prompt should make the following fundamental contextual statements:
+
+- When I say X, I mean Y (or would like you to do Y)
+
+You will need to replace "X" with an appropriate statement, symbol, word, etc. You will then need to may this to a meaning, Y.
+
+**Examples:**
+
+- When I say "variations(<something>)", I mean give me ten different variations of <something>
+
+Usage: "variations(company names for a company that sells software services for prompt engineering)"
+
+Usage: "variations(a marketing slogan for pickles)"
+
+- When I say Task X [Task Y], I mean Task X depends on Task Y being completed first. 
+
+Usage: "Describe the steps for building a house using my task dependency language."
+
+Usage: "Provide an ordering for the steps: Boil Water [Turn on Stove], Cook Pasta [Boil Water], Make Marinara [Turn on Stove], Turn on Stove [Go Into Kitchen]"
+
+ # 🍜Recipe Pattern
+
+ Sometimes we **know part of the solution** that we need when we're working with a large language and model. So we have a problem and we **know some of the steps** or some of the pieces that we want involved in the solution, **but we don't know the full solution**. And what we need is the large language model to help us *fill in the blanks*, to put together the missing steps. Basically, to complete the recipe. Give us the detailed set of steps that take the ingredients that we have or the bits of information we know *about how to cook* this particular dish and fills in all of the gaps.
+
+ **EXAMPLE - 1**
+ ```
+ I want to reach from Ahmedabad -> ... -> ... Mumbai
+
+ How should I plan?
+```
+
+**EXAMPLE - 2**
+```
+I would like to  purchase a house. I know that I need to perform steps make an offer and close on the house. Provide a complete sequence of steps for me. Fill in any missing steps.
+```
+
+**EXAMPLE - 3**
+```
+I would like to drive to NYC from Nashville. I know that I want to go through Asheville, NC on the way and that I don't want to drive more than 300 miles per day. Provide a complete sequence of steps for me. Fill in any missing steps.
+```
+
+# ✍🏻 Create outline of a topic *(Outline Expansion Pattern)*
+This helps **brainstorm** or **create** content.
+
+```
+Act as an outline expander. 
+
+Generate a bullet point outline based on the input that I give you and then ask me for which bullet point you should expand on. Create a new outline for the bullet point that I select. At the end, ask me for what bullet point to expand next.
+
+Ask me for what to outline.
+```
+
+Then the *model gives outline in the form of **toc***. You can select like `3.` to expand and it will **elaborate** on that.
+
+> 🟢 Example: 
+> *Act as an outline expander. Generate a bullet point outline based on the input that I give you and then ask me for which bullet point you should expand on. Each bullet can have at most 3-5 sub bullets. The bullets should be numbered using the pattern [A-Z].[i-v].[* through ****]. Create a new outline for the bullet point that I select.  At the end, ask me for what bullet point to expand next. Ask me for what to outline.*
+
+# ✔️ Fact checks (Fact check list pattern)
+
+```
+🔴 PROMPT 
+
+Whenever you output text, **generate a set of facts** that are contained in the output. The set of facts should be **inserted at the end** of the output. The set of facts should be the fundamental facts that could undermine the veracity of the output if any of them are incorrect.
+```
+
+# 🪡 Tail Generation Pattern
+> *It is when you want the model to keep the **main topic** in mind by re-generating that thing at the end of each response.*
+
+
+EXAMPLE
+```
+Ask me to what I want to do, then give alternative approaches of that task to be done. And after you are done with the response, ask me for another task for the alternative approaches.
+```
+
+- The above will ask the user to input task.
+- The model will give **alternative** ways for that task to be solved.
+- Then again ask the user **while containing the term "alternative"** so that it stays the same.
+
+> *Remember, I used to follow a chat thread of "giving emojis". But after a while the model started giving "longer responses" with emojis? That's where it can be useful.*
+
+
+# 🎭 Semantic Filter Pattern
+```
+🟢 EXAMPLE - 1 
+Filter this information to remove any personally identifying information or information that could potentially be used to re-identify the person. 
+
+🟢 EXAMPLE - 2
+Filter this email to remove redundant information.
+```
+
+# That's it from this course!
+
+
+
