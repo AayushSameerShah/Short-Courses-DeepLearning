@@ -35,7 +35,8 @@ This is where the **model has to reason** through his approach. Or call it "thin
 
 Here we also tel the model to "follow the given rules". This is also **considered as the CoT**.
 
-> [!INFO]
+> [!NOTE]
+> 
 > *In simple terms, cognitive verification refers to the process of confirming or validating our thoughts and beliefs by seeking consistency with what others around us think or believe.*
 
 💡This is **without specifiying the exact questions or steps** making the model to perform them!
